@@ -1,7 +1,7 @@
-print ("Hello World") #direct
+print ("Hello World")
 
 start= "Hello World"
-print (start)  #with variable
+print (start)
 
 s="H"
 ss="e"
@@ -12,4 +12,8 @@ S="world"  #variable names are case-sensitive
 
 
 
-print(s,ss,sss,ssss,sssss,S)  #with multi variable
+print(s,ss,sss,ssss,sssss,S)
+
+
+
+
