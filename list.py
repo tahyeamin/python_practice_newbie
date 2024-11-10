@@ -91,34 +91,128 @@ list1.pop(3)
 
 #create another list
 
-list2 = ['red', 'white', 'green', 'yellow', 'black', 'blue']
+list2 = ['red', 'white', 'green', 'yellow', 'black', 'blue', 'white']
 print(list2)
 
-'''
-# Return the index in the list
 
-list2.index("red")
-print(list2)
-list
+# Return the index in the list, SP
 
-'''
+print(list2.index("red"))
+print(list2.index("black"))
+print(list2.index("white",1,6))
 
-color_list=["Red", "Blue", "Green", "Black"]
-print(color_list)
-
-color_list=["Red", "Blue", "Green", "Black", "Blue"]
-print(color_list)
-
-color_list.count("Blue")
 
 
 
 #Return the number of times 'x' appear in the list
 
-list2.append("white")
+print(list2.count("white"))
+print(list2.count("green"))
+
+
+
+#Sort the items of the list in place
+
+list2.sort(reverse=True)
 print(list2)
-list2.count("white")
-print(list2)
+print(sorted(list2))
+
+
+#Reverse the elements of the list in place
+#creating another list
+
+
+list3 =['red', 'white', 'green', 'yellow', 'black', 'blue', 'white']
+
+print("reversing this list :",list3)
+list3.reverse()
+print(list3)
+
+
+
+#Return a shallow copy of the list
+
+
+print(list3)
+print(list3.copy())
+
+
+#Convert a list to a tuple in Python
+
+tuple1 = tuple(list3)
+print(tuple1)
+
+
+
+#How to use the double colon [ : : ]?
+
+newlist = list3 [1:6:2] #list[start,stop,step] step for increament
+print(newlist)
+
+newlist = list3[::2]
+print(newlist)
+
+newlist = list3[6:0:-2]
+print(newlist)
+
+
+
+#Find the largest and the smallest item in a list
+
+list4= [1,2,3,4,5,6,7,10,20]
+print(max(list4))
+print(min(list4))
+
+
+#Compare two lists in Python
+
+
+list5 = ["red", "white", "green", "yellow"]
+list6 = ["red", "green", "white", "yellow"]
+
+print(list5 == list6)
+
+print(list5.sort() == list6.sort())
+
+
+
+
+#Using Lists as Stacks
+
+stacklist = ['black', 'blue', 'green', 'red']
+
+
+print("declared stack list ", "\n", stacklist)
+ 
+stacklist.append("white")
+stacklist.append("yellow")
+
+print("Stacks after pushing :" , stacklist)
+
+stacklist.pop()
+stacklist.pop()
+stacklist.pop()
+
+print("stack list after pop :", stacklist)
+
+
+
+#Using Lists as Queues
+
+from collections import deque
+
+queuelist = deque(['black', 'blue', 'green', 'red'])
+
+
+print("declared queue list ", "\n", queuelist)
+ 
+stacklist.append("white")
+stacklist.append("yellow")
+print(queuelist)
+
+
+
+
 
 
 
