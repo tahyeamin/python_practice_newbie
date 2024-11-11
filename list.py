@@ -201,15 +201,20 @@ print("stack list after pop :", stacklist)
 
 from collections import deque
 
-queuelist = deque(['black', 'blue', 'green', 'red'])
+queuelist = ['black', 'blue', 'green']
 
 
 print("declared queue list ", "\n", queuelist)
  
-stacklist.append("white")
-stacklist.append("yellow")
+queuelist.append("white")
+queuelist.append("yellow")
 print(queuelist)
 
+
+queuelist.pop(0)     #if you dont use [0] this will work as stack
+queuelist.pop(0)
+queuelist.pop(0)
+print("queue after pop :" ,queuelist)
 
 
 
