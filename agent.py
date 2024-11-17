@@ -14,8 +14,9 @@ table={('NM','NS' ,'NGB'):'Do Nothing',
        ('MD' , 'NS' , 'GBD'):'Sound Alarm',
        ('MD' , 'NS' , 'GBD'):'Send Alert',
        ('MD' , 'SD' , 'GBD'):'Active Fire Suppression',
+        ('MD' , 'SD' , 'GBD'):'Send Alert',
        ('MD' , 'SD' , 'GBD'):'Sound Alarm',
-       ('MD' , 'SD' , 'GBD'):'Send Alert',}
+      }
 
 
 percepts=[]  # to store percept history
