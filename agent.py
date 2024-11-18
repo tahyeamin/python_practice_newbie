@@ -30,7 +30,9 @@ def table_driven_agent(percept):
 
 import random
 
+
 # simulating the first perception randomly
+# NM for no motion
 action = random.choice(['NM', 'MD' , 'NS' , 'SD' , 'NGB' , 'GBD'])
 Condition = random.choice(['Active Fire Suppression','Sound Alarm' , 'Send Alert'])
 
