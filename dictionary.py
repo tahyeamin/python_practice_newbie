@@ -26,4 +26,6 @@ k = dictionary.keys()
 
 print(k)
 
+print(dictionary)
+
 
